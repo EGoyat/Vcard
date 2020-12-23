@@ -1,0 +1,84 @@
+@font-face{
+    font-family: "1942";
+    src: url(/Vcard/fonts/1942.ttf) format("truetype");
+}
+
+*{
+    font-family: "1942";
+}
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+body{
+    background-image: url(/Vcard/img/photo-1525034687081-c702010cb70d.jpg);
+    font-size: 2rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content:left;
+    list-style-type: none;
+    margin-bottom: 0%; 
+}
+
+.tab {
+    cursor: pointer;
+    border:  1px solid black;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    padding: 10px;
+    background-image: url(/Vcard/img/old-math-paper-with-coffee-stain-1.jpg);
+    
+}
+
+.tab.active {
+    border-bottom: none;
+    background-image: none;
+    background-color: red;
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(/Vcard/img/old-math-paper-with-coffee-stain-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+    min-height: 90vh;
+}
+
+
+h1{
+    margin-top: 0%;
+}
+
+.resume{
+    text-align: center;
+}
+
+.skill{
+    list-style-type: none;
+    display: flex;
+}
+
+.current{
+    text-align: center;
+    font-weight: bolder;
+    color: red;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mugshot{
+    display: flex;
+    justify-content: space-between;
+}
